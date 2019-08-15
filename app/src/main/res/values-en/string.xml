@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Redirect</string>
+    <string name="hosts_setting">hosts setting</string>
+    <string name="start_vpn">start vpn</string>
+    <string name="stop_vpn">stop vpn</string>
+    <string name="dialog_title">error</string>
+    <string name="dialog_message">No hosts</string>
+    <string name="dialog_confirm">confirm</string>
+    <string name="dialog_cancel">cancel</string>
+    <string name="input_correct_hostname">Please enter the correct hostname</string>
+    <string name="input_correct_ip">Please enter the correct IP address</string>
+    <string name="delete">Delete</string>
+    <string name="delete_message">Are you sure you want to delete the selected item?</string>
+    <string name="delete_successful">Successfully Deleted</string>
+    <string name="save_successful">Successfully Saved</string>
+    <string name="hint_ip">IP Address</string>
+    <string name="hint_hostname">Hostname</string>
+    <string name="hint_remark">Remark</string>
+    <string name="btn_save">Save</string>
+    <string name="action_add">Add</string>
+    <string name="action_toggle">Toggle</string>
+    <string name="action_delete">Delete</string>
+</resources>

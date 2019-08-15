@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Redirect</string>
+    <string name="hosts_setting">hosts设置</string>
+    <string name="start_vpn">开启vpn</string>
+    <string name="stop_vpn">停止vpn</string>
+    <string name="dialog_title">错误</string>
+    <string name="dialog_message">未设置hosts</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="input_correct_hostname">请输入正确的hostname</string>
+    <string name="input_correct_ip">请输入正确ip地址</string>
+    <string name="delete">删除</string>
+    <string name="delete_message">确定要删除已选项？</string>
+    <string name="delete_successful">删除成功</string>
+    <string name="save_successful">保存成功</string>
+    <string name="hint_ip">IP地址</string>
+    <string name="hint_hostname">Hostname</string>
+    <string name="hint_remark">备注</string>
+    <string name="btn_save">保存</string>
+    <string name="action_add">添加</string>
+    <string name="action_toggle">转换</string>
+    <string name="action_delete">删除</string>
+</resources>
