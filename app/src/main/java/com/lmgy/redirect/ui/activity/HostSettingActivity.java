@@ -164,10 +164,10 @@ public class HostSettingActivity extends AppCompatActivity implements ActionMode
                                 SPUtils.setDataList(getApplicationContext(), "hostList", dataList);
                                 adapter = new HostSettingAdapter(getApplicationContext(), getList());
                                 mRv.setAdapter(adapter);
-                                Snackbar.make(mCoordinatorLayout, R.string.delete_successful, Snackbar.LENGTH_SHORT).show();
+                                Snackbar.make(mCoordinatorLayout, getString(R.string.delete_successful), Snackbar.LENGTH_SHORT).show();
                             }
                         })
-                        .setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
+                        .setNegativeButton(getString(R.string.dialog_cancel), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 

@@ -111,24 +111,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
-        builder.setTitle(R.string.dialog_title);
-        builder.setMessage(R.string.dialog_message);
-        builder.setPositiveButton(R.string.dialog_confirm, new DialogInterface.OnClickListener() {
+        builder.setCancelable(false)
+                .setTitle(getString(R.string.dialog_title))
+                .setMessage(getString(R.string.dialog_message))
+                .setPositiveButton(getString(R.string.dialog_confirm), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 setButton(true);
                 startActivity(new Intent(getApplicationContext(), HostSettingActivity.class));
             }
-        });
-
-        builder.setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
+        })
+                .setNegativeButton(getString(R.string.dialog_cancel), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 setButton(true);
             }
-        });
-        builder.show();
+        })
+                .show();
     }
 
     private void initView() {

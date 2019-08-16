@@ -121,10 +121,10 @@ public class ChangeSettingActivity extends AppCompatActivity implements View.OnC
                         hostData = new HostData(true, mIpAddress.getText().toString(), mHostname.getText().toString(), mRemark.getText().toString());
                         saveOrUpdate(hostData);
                     } else {
-                        Snackbar.make(mCoordinatorLayout, R.string.input_correct_hostname, Snackbar.LENGTH_SHORT).show();
+                        Snackbar.make(mCoordinatorLayout, getString(R.string.input_correct_hostname), Snackbar.LENGTH_SHORT).show();
                     }
                 } else {
-                    Snackbar.make(mCoordinatorLayout, R.string.input_correct_ip, Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(mCoordinatorLayout, getString(R.string.input_correct_ip), Snackbar.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -143,7 +143,7 @@ public class ChangeSettingActivity extends AppCompatActivity implements View.OnC
         }
         SPUtils.setDataList(this, "hostList", hostDataList);
         Intent i = new Intent();
-        i.putExtra("result", R.string.save_successful);
+        i.putExtra("result", getString(R.string.save_successful));
         setResult(3, i);
         finish();
     }
