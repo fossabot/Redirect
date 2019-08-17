@@ -1,4 +1,6 @@
 ## Redirect
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flmgy%2FRedirect.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flmgy%2FRedirect?ref=badge_shield)
+
 
 Description
 ------------
@@ -17,3 +19,7 @@ License
 -------
 
 Redirect is released under the GNU General Public License v3.0 License.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flmgy%2FRedirect.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flmgy%2FRedirect?ref=badge_large)
