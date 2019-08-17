@@ -11,12 +11,14 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 
+import com.kyleduo.switchbutton.SwitchButton;
 import com.lmgy.redirect.R;
 import com.lmgy.redirect.bean.HostData;
 import com.lmgy.redirect.net.LocalVpnService;
 import com.lmgy.redirect.utils.SPUtils;
-import com.suke.widget.SwitchButton;
+
 
 import java.util.List;
 
@@ -44,9 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        mBtnVpn.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
+        mBtnVpn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     if (checkHost() == -1) showDialog();
                     else startVPN();
@@ -55,6 +57,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
+//        mBtnVpn.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+//                if (isChecked) {
+//                    if (checkHost() == -1) showDialog();
+//                    else startVPN();
+//                } else {
+//                    shutdownVPN();
+//                }
+//            }
+//        });
 
         LocalBroadcastManager.getInstance(this).registerReceiver(vpnStateReceiver,
                 new IntentFilter(LocalVpnService.BROADCAST_VPN_STATE));

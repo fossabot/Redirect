@@ -6,26 +6,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lmgy.redirect.ui.activity.MainActivity">
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="128dp"
         android:layout_height="256dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp">
-        <com.suke.widget.SwitchButton
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.kyleduo.switchbutton.SwitchButton
             android:id="@+id/btn_vpn"
             android:layout_width="256dp"
             android:layout_height="128dp"
-            android:text="@string/start_vpn"
             android:rotation="-90"
-            android:layout_marginLeft="8dp"
-            app:layout_constraintLeft_toLeftOf="parent" android:layout_marginRight="8dp"
-            app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:kswTextAdjust="-2dp"
+            app:kswTextExtra="8dp"
+            app:kswTextOff="Off"
+            app:kswTextOn="On"
+            app:kswAnimationDuration="300"
+            app:kswTintColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
     <Button
